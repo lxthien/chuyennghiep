@@ -1,5 +1,5 @@
 <!doctype html>
-<html ⚡ lang="en">
+<html ⚡ lang="{{ app.request.locale }}">
     <head>
         <meta charset="utf-8">
         <title>{{ post.getPageTitle() is not null ? post.getPageTitle() : post.getTitle() }}</title>
@@ -313,6 +313,40 @@
                     </div>
                 </div>
             </footer>
+            <div id="button-contact-vr">
+                <div id="zalo-vr" class="button-contact">
+                    <div class="phone-vr">
+                        <div class="phone-vr-circle-fill"></div>
+                        <div class="phone-vr-img-circle">
+                            <a href="https://m.me/ktnhapho" rel="nofollow noreferrer" target="_blank" title="Chát với chúng tôi">
+                                <amp-img
+                                    alt="Chát với chúng tôi"
+                                    src="{{ asset('assets/images/fb.png') }}"
+                                    width="35"
+                                    height="35"
+                                >
+                                </amp-img>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="zalo-vr" class="button-contact">
+                    <div class="phone-vr">
+                        <div class="phone-vr-circle-fill"></div>
+                        <div class="phone-vr-img-circle">
+                            <a href="https://zalo.me/0985724890" rel="nofollow noreferrer" target="_blank" title="Chát với chúng tôi">
+                                <amp-img
+                                    alt="Chát với chúng tôi"
+                                    src="{{ asset('assets/images/zalo.png') }}"
+                                    width="35"
+                                    height="35"
+                                >
+                                </amp-img>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <a href="tel:+84931284379">
                 <div class="hotline">
                     <span class="before-hotline">Hotline:</span>
